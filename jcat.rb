@@ -1,11 +1,17 @@
 class Jcat < Formula
-  desc "jquery cat wrapper around jq"
+  desc "JQuery cat wrapper around jq"
   homepage "https://github.com/shelltoys/cats"
-  url "https://github.com/shelltoys/cats/tree/v0.0.1"
+  url "https://github.com/shelltoys/cats"
   version "0.0.1"
-  sha256 "aa73a73164719eeb69492815593d184163679772"
+  sha256 "ed544bab01cb2720f8f0b831db8f26b25f8b30ec3ee5f7694a7ef928e6dbdc9c"
+
+  bottle :unneeded
 
   def install
-    bin.install 'jcat'
+    bin.install "jcat"
+  end
+
+  test do
+    puts "TODO: test"
   end
 end
