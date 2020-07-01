@@ -7,6 +7,8 @@ class Jcat < Formula
 
   bottle :unneeded
 
+  depends_on "jq"
+
   def install
     bin.install "jcat"
   end
