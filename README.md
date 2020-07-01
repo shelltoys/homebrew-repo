@@ -1,9 +1,12 @@
 # Shelltoys Shelltoys
 
 ## How do I install these formulae?
-`brew install shelltoys/shelltoys/<formula>`
+```sh
+brew tap shelltoys
 
-Or `brew tap shelltoys/shelltoys` and then `brew install <formula>`.
+# e.g. brew install jcat
+brew install formula
+```
 
 ## Documentation
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
