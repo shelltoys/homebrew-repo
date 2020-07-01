@@ -1,4 +1,5 @@
-.PHONY: sha
+# shellcheck: make
+.PHONY: all clean test sha audit
 
 sha:
 	@curl -s https://raw.githubusercontent.com/shelltoys/cats/master/jcat \
@@ -6,4 +7,7 @@ sha:
     | awk '{ print $$1 }'
 
 audit:
-	brew audit --strict --online --verbose jcat
+	git ls-files *.rb \
+    | awk -F. '{ print $1 }' \
+    | tee \
+    | xargs brew audit --new-formula
