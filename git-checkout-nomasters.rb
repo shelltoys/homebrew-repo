@@ -3,8 +3,8 @@ class GitCheckoutNomasters < Formula
   homepage "https://github.com/shelltoys/git-helpers"
 
   url "https://raw.githubusercontent.com/shelltoys/git-helpers/da1639d17437f96395e57f545a64b3caacb17f89/git-checkout-nomasters"
-  version "0.0.1"
-  sha256 "9d8aa815340181e09da60669ace41b9d974636339f7a36294baca26f32624aa2"
+  version "0.0.2"
+  sha256 "58aaf82e963bec157b120e977131493a6b4b6b2f5c94783a3ec31725e80d3ff1"
 
   license "MIT"
 
